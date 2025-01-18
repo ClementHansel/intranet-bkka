@@ -68,8 +68,12 @@ const data = {
       isActive: true,
       items: [
         {
+          title: "Admin",
+          url: "/admin",
+        },
+        {
           title: "Customer Registration",
-          url: "#",
+          url: "/admin/customers/registration",
         },
         {
           title: "Customers List",
