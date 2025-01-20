@@ -18,7 +18,6 @@ import { NavMain } from "@/app/sales-marketing/nav-main";
 import { NavProjects } from "@/app/sales-marketing/nav-projects";
 import { NavUser } from "@/app/sales-marketing/nav-user";
 import { TeamSwitcher } from "@/app/sales-marketing/team-switcher";
-import { Admin } from "@/app/sales-marketing/admin";
 
 import {
   Sidebar,
@@ -70,20 +69,16 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "Admin",
-          url: "/src/app/sales-marketing/customer-detail/admin/Admin.tsx",
-        },
-        {
           title: "Customer Registration",
-          url: "/src/app/sales-marketing/customer-detail/customer-registration/page.tsx",
+          url: "/sales-marketing/customer-detail/customer-registration",
         },
         {
           title: "Customers List",
-          url: "#",
+          url: "/sales-marketing/customer-detail/customer-list",
         },
         {
           title: "Customers Detail Activities",
-          url: "#",
+          url: "/sales-marketing/customer-detail/customers-detail-activities",
         },
       ],
     },
@@ -94,35 +89,35 @@ const data = {
       items: [
         {
           title: "Quotation Generator",
-          url: "#",
+          url: "/sales-marketing/orders-detail/quotation-generator",
         },
         {
           title: "Purchase Orders",
-          url: "#",
+          url: "/sales-marketing/orders-detail/purchase-orders",
         },
         {
-          title: "Invoices",
-          url: "#",
+          title: "Invoices List",
+          url: "/sales-marketing/orders-detail/invoices-list",
         },
         {
           title: "Order Tracker",
-          url: "#",
+          url: "/sales-marketing/orders-detail/order-tracker",
         },
         {
           title: "Special Notes",
-          url: "#",
+          url: "/sales-marketing/orders-detail/special-notes",
         },
         {
           title: "Addendum",
-          url: "#",
+          url: "/sales-marketing/orders-detail/addendum",
         },
         {
           title: "After Sales Requests",
-          url: "#",
+          url: "/sales-marketing/orders-detail/after-sales-requests",
         },
         {
           title: "Orders Activities",
-          url: "#",
+          url: "/sales-marketing/orders-detail/orders-activity",
         },
       ],
     },
@@ -133,23 +128,23 @@ const data = {
       items: [
         {
           title: "Target Sales",
-          url: "#",
+          url: "/sales-marketing/sales/target-sales",
         },
         {
           title: "Prospects",
-          url: "#",
+          url: "/sales-marketing/sales/prospects",
         },
         {
           title: "Under Review",
-          url: "#",
+          url: "/sales-marketing/sales/under-review",
         },
         {
           title: "Sales List",
-          url: "#",
+          url: "/sales-marketing/sales/sales-list",
         },
         {
           title: "Terminated Sales",
-          url: "#",
+          url: "/sales-marketing/sales/terminated-sales",
         },
       ],
     },
