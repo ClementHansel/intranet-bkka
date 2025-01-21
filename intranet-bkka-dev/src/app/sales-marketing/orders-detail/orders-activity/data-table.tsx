@@ -19,14 +19,6 @@ import {
   TableCell,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { MoreHorizontal } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 import { TableData } from "@/app/sales-marketing/customer-detail/customers-detail-activities/data-table";
 import { Input } from "@/components/ui/input";
@@ -72,31 +64,15 @@ const DataTable: React.FC<DataTableProps> = ({
       { accessorKey: "companyName", header: "Company Name" },
       { accessorKey: "contactPersonName", header: "Contact Person Name" },
       { accessorKey: "salesPerson", header: "Sales Person" },
-      { accessorKey: "status", header: "Status" },
       {
         id: "actions",
         cell: ({ row }) => (
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="h-8 w-8 p-0">
-                <span className="sr-only">Open menu</span>
-                <MoreHorizontal className="h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuLabel>Actions</DropdownMenuLabel>
-              <DropdownMenuItem
-              // onClick={() => handleViewDetailCallback(row.original)}
-              >
-                View Detail
-              </DropdownMenuItem>
-              <DropdownMenuItem
-              // onClick={() => handleEditCallback(row.original)}
-              >
-                Edit
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Button
+            // onClick={() => handleViewDetails(row.original.invoiceNumber)}
+            className="bg-blue-500 text-white px-4 py-2 rounded"
+          >
+            View Details
+          </Button>
         ),
       },
     ],

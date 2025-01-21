@@ -41,11 +41,10 @@ const InvoicePage = () => {
 
   const columns = useMemo<ColumnDef<(typeof invoiceData)[0]>[]>(
     () => [
-      { accessorKey: "invoiceNumber", header: "Invoice Number" },
+      { accessorKey: "purchaseOrderNumber", header: "PO Number" },
       { accessorKey: "companyName", header: "Company Name" },
       { accessorKey: "contactPerson", header: "Contact Person Name" },
       { accessorKey: "salesName", header: "Sales Name" },
-      { accessorKey: "status", header: "Status" },
       {
         id: "actions",
         cell: ({ row }) => (
@@ -92,7 +91,7 @@ const InvoicePage = () => {
         Special Notes
       </h1>
       <Input
-        placeholder="Search invoices..."
+        placeholder="Search..."
         value={globalFilter ?? ""}
         onChange={(e) => setGlobalFilter(String(e.target.value))}
         className="max-w-sm mb-4"

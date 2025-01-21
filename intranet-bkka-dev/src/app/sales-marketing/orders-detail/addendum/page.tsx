@@ -92,7 +92,7 @@ const InvoicePage = () => {
         Addendum Lists
       </h1>
       <Input
-        placeholder="Search invoices..."
+        placeholder="Search..."
         value={globalFilter ?? ""}
         onChange={(e) => setGlobalFilter(String(e.target.value))}
         className="max-w-sm mb-4"

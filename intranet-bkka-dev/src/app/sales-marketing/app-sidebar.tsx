@@ -92,7 +92,7 @@ const data = {
           url: "/sales-marketing/orders-detail/quotation-generator",
         },
         {
-          title: "Purchase Orders",
+          title: "Purchase Order",
           url: "/sales-marketing/orders-detail/purchase-orders",
         },
         {
